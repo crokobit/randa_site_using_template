@@ -1,13 +1,12 @@
 <div>
+  <h3>edit article</h3>
   <%= form_for @article do |f| %>
-    <h3>new article</h3>
     <div class="form-group">
       <%= f.label :title, 'title' %>
       <%= f.text_field :title, class: 'form-control' %>
       <%= f.label :content, 'content' %>
       <%= f.text_area :content, class: 'form-control' %>
     </div>
-     <%= f.submit 'add article', :class => 'button right' %>
+     <%= f.submit 'edit article', :class => 'button right' %>
   <% end %>
 </div>
-
