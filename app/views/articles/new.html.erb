@@ -1,0 +1,13 @@
+<div>
+  <%= form_for @article do |f| %>
+    <h3>New Article</h3>
+    <div class="form-group">
+      <%= f.label :title, 'title' %>
+      <%= f.text_field :title, class: 'form-control' %>
+      <%= f.label :content, 'content' %>
+      <%= f.text_area :content, class: 'form-control' %>
+    </div>
+     <%= f.submit 'Add Article', :class => 'button right' %>
+  <% end %>
+</div>
+
