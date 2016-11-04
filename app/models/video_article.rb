@@ -1,0 +1,2 @@
+class VideoArticle < ApplicationRecord
+end

@@ -1,0 +1,10 @@
+<div>
+  <h2>
+    <a href="<%= video_article_path(video_article) %>"><%= video_article.title %></a>
+  </h2>
+  <p class="lead">
+  by <a href="index.php">Randa</a>
+  </p>
+  <p><span class="glyphicon glyphicon-time"></span> Posted on <%= video_article.created_at %></p>
+  <p><%= video_article.content %></p>
+</div>

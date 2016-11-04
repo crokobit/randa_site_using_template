@@ -1,0 +1,13 @@
+<div>
+  <%= form_for @video_article do |f| %>
+    <h3>new video article</h3>
+    <div class="form-group">
+      <%= f.label :title, 'title' %>
+      <%= f.text_field :title, class: 'form-control' %>
+      <%= f.label :content, 'content' %>
+      <%= f.text_area :content, class: 'form-control' %>
+    </div>
+     <%= f.submit 'add video article', :class => 'button right' %>
+  <% end %>
+</div>
+

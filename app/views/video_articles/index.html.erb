@@ -1,0 +1,20 @@
+<div class="container">
+  <%= link_to "New", new_video_article_path %>
+  <div class="row">
+    <!-- Blog Entries Column -->
+    <div class="col-md-8">
+      <% @video_articles.each do |video_article| %>
+        <%= render 'video_article', video_article: video_article %>
+        <%= link_to "Edit", edit_video_article_path(video_article) %>
+      <% end %>
+      <ul class="pager">
+        <li class="previous">
+          <a href="#">← Older</a>
+        </li>
+        <li class="next">
+          <a href="#">Newer →</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
